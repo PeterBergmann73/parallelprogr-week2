@@ -53,7 +53,7 @@ object ParallelCountChange {
     // the initial number of coins.
     // val coins0: List[Int] = coins.filter(_ <= money).sorted
     val coins0: List[Int] = coins.sorted
-    Util.go(money, coins0, 0)
+    Util.countChange(money, coins0, 0)
   }
 
   type Threshold = (Int, List[Int]) => Boolean
@@ -72,7 +72,7 @@ object ParallelCountChange {
     def go(left: Int, c0: List[Int], count: Int): Int = {
 
       if (threshold(left, c0)) {
-        Util.go(left, c0, count)
+        Util.countChange(left, c0, count)
       } else {
         if (left == 0) {
           count + 1
@@ -87,7 +87,7 @@ object ParallelCountChange {
               } else if (h == left) {
                 // this case will be handled below when subtracting the head,
                 // however, let us handled it separately
-                // just to reduce number recursive calls
+                // just to reduce the number of recursive calls
                 count + 1
               } else {
                 val (r1, r2) = parallel(go(left, t, count), go(left - h, c0, count))
@@ -98,7 +98,7 @@ object ParallelCountChange {
       }
     }
 
-    Util.go(money, coins0, 0)
+    Util.countChange(money, coins0, 0)
   }
 
   /** Threshold heuristic based on the starting money. */

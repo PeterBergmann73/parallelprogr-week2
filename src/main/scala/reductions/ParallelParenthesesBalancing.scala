@@ -41,33 +41,82 @@ object ParallelParenthesesBalancing {
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
     */
   def balance(chars: Array[Char]): Boolean = {
-    if (chars.isEmpty) {
+
+    val length = chars.length
+
+    @scala.annotation.tailrec
+    def check(from: Int, cum: Int): Boolean = {
+      if (cum < 0) {
+        false
+      } else if (from >= length) {
+        cum == 0
+      } else {
+        val h = chars(from)
+
+        val current = h match {
+          case '(' => 1
+          case ')' => -1
+          case _ => 0
+        }
+
+        check(from + 1, cum + current)
+      }
+    }
+
+    if (length == 0) {
       true
     } else {
-      val scanned: Array[Int] = chars.scanLeft(0) {
-        case (cum, c) =>
-          if (c == '(') cum + 1
-          else if (c == ')') cum - 1
-          else cum
-      }
-
-      !scanned.exists(_ < 0) && scanned.last == 0
+      check(0, 0)
     }
   }
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
     */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
+    println(s"chars: ${chars.toList}")
+    require(threshold >= 1, s"illegal threshold $threshold")
 
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int) /*: ???*/ = {
-      ???
+    // first int - number of unbalanced left parenthesis
+    // second int - number of unbalanced right parenthesis
+    @scala.annotation.tailrec
+    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
+      println(s"Entering threshold, idx $idx, until $until")
+      if (idx >= until) {
+        (arg1, arg2)
+      } else {
+        val (a1, a2) = chars(idx) match {
+          case '(' => (arg1 + 1, arg2)
+          case ')' =>
+            if (arg1 > 0) {
+              (arg1 - 1, arg2)
+            } else {
+              (arg1, arg2 + 1)
+            }
+          case _ => (arg1, arg2)
+        }
+
+        traverse(idx = idx + 1, until = until, arg1 = a1, arg2 = a2)
+      }
     }
 
-    def reduce(from: Int, until: Int) /*: ???*/ = {
-      ???
+    def reduce(from: Int, until: Int): (Int, Int) = {
+      println(s"Entering reduce, from: $from, until: $until")
+      if ((until - from) <= threshold) {
+        traverse(idx = from, until = until, 0, 0)
+      } else {
+        println(s"calculating mid, from $from, until $until")
+        val mid = (until - from) / 2
+
+        println(s"mid $mid")
+
+        val (l, r) = parallel(reduce(from = from, until = mid), reduce(from = mid, until = until))
+
+        val matched = scala.math.min(l._1, r._2)
+        (l._1 + r._1 - matched, l._2 + r._2 - matched)
+      }
     }
 
-    reduce(0, chars.length) == ???
+    reduce(0, chars.length) == (0, 0)
   }
 
   // For those who want more:
