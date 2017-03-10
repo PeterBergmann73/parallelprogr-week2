@@ -80,7 +80,7 @@ object ParallelParenthesesBalancing {
     // second int - number of unbalanced right parenthesis
     @scala.annotation.tailrec
     def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
-      println(s"Entering threshold, idx $idx, until $until")
+      //println(s"Entering threshold, idx $idx, until $until")
       if (idx >= until) {
         (arg1, arg2)
       } else {
@@ -100,14 +100,18 @@ object ParallelParenthesesBalancing {
     }
 
     def reduce(from: Int, until: Int): (Int, Int) = {
-      println(s"Entering reduce, from: $from, until: $until")
+//      synchronized {
+//        println(s"Entering reduce, from: $from, until: $until")
+//        require(from <= until, s"from $from is not before until $until")
+//      }
+
       if ((until - from) <= threshold) {
         traverse(idx = from, until = until, 0, 0)
       } else {
-        println(s"calculating mid, from $from, until $until")
+        //println(s"calculating mid, from $from, until $until")
         val mid = (until - from) / 2
 
-        println(s"mid $mid")
+        //println(s"mid $mid")
 
         val (l, r) = parallel(reduce(from = from, until = mid), reduce(from = mid, until = until))
 
