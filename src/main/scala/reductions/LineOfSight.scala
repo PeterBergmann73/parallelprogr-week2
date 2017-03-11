@@ -39,10 +39,11 @@ object LineOfSight {
 
     output(0) = 0.0f
 
-    var i = 0
+    var i = 1
 
     while(i < length) {
-      output(i + 1) = max(input(i), output(i))
+      val inp = input(i) / i
+      output(i) = max(inp, output(i - 1))
       i += 1
     }
   }
@@ -62,7 +63,11 @@ object LineOfSight {
   def upsweepSequential(input: Array[Float], from: Int, until: Int): Float = {
     (from until until).foldLeft(0.0) {
       case (cur, i) =>
-        max(cur.toFloat, input(i))
+        if (i == 0) {
+          cur
+        } else {
+          max(cur.toFloat, input(i) / i)
+        }
     }.toFloat
   }
 
@@ -97,14 +102,16 @@ object LineOfSight {
                           startingAngle: Float, from: Int, until: Int): Unit = {
 
     def go(i: Int, until: Int, cur: Float): Unit = {
-      if (i == until && i != 0) {
+      if (i < until) {
         val cur0 = max(cur, input(i) / i)
         output(i) = cur0
         go(i + 1, until, cur0)
       }
     }
 
-    go(0, input.length, startingAngle)
+    if (input.length != 0) {
+      go(1, input.length, startingAngle)
+    }
   }
 
   /** Pushes the maximum angle in the prefix of the array to each leaf of the

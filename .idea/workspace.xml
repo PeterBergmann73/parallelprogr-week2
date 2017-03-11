@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e13e1d36-35b9-4364-b91e-f5abb197fcad" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/util/Util.scala" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$balance$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/util/Util$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/util/Util.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1$$anonfun$3.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" afterPath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/ParallelCountChange.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/ParallelCountChange.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/ParallelParenthesesBalancing.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/reductions/UtilTest.scala" afterPath="$PROJECT_DIR$/src/test/scala/reductions/UtilTest.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/runMain/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/runMain/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.11" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -68,8 +43,18 @@
       <file leaf-file-name="LineOfSight.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineOfSightSuite.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/LineOfSightSuite.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -410,7 +395,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="ScalaTest.UtilTest">
+  <component name="RunManager" selected="JUnit.LineOfSightSuite">
     <configuration default="false" name="ParallelCountChangeRunner" type="Application" factoryName="Application" temporary="true">
       <log_file path="$PROJECT_DIR$/src/main/scala/reductions/countChange-result.txt" checked="true" skipped="true" show_all="false" alias="$PROJECT_DIR$/src/main/scala/reductions/countChange-result.txt" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -455,32 +440,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ParallelCountChangeSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="reductions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="root" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="reductions" />
-      <option name="MAIN_CLASS_NAME" value="reductions.ParallelCountChangeSuite" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ParallelParenthesesBalancingSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -506,6 +465,35 @@
       <envs />
       <patterns />
       <method />
+    </configuration>
+    <configuration default="false" name="LineOfSightSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="reductions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="root" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="reductions" />
+      <option name="MAIN_CLASS_NAME" value="reductions.LineOfSightSuite" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="true" action="test:compile" runInCurrentModule="true" />
+      </method>
     </configuration>
     <configuration default="false" name="UtilTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -820,17 +808,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ParallelCountChangeRunner" />
       <item index="1" class="java.lang.String" itemvalue="Application.ParallelParenthesesBalancingRunner" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParallelCountChangeSuite" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParallelParenthesesBalancingSuite" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParallelParenthesesBalancingSuite" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LineOfSightSuite" />
       <item index="4" class="java.lang.String" itemvalue="ScalaTest.UtilTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.UtilTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParallelParenthesesBalancingSuite" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ParallelCountChangeRunner" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ParallelParenthesesBalancingRunner" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ParallelCountChangeSuite" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LineOfSightSuite" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.UtilTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParallelParenthesesBalancingSuite" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ParallelCountChangeRunner" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ParallelParenthesesBalancingRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -900,33 +888,47 @@
       <option name="project" value="LOCAL" />
       <updated>1489175891332</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Working version.">
+      <created>1489242087491</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489242087491</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Working version.">
+      <created>1489242137333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1489242137333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 26m 22s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 27m 59s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 30m 11s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 31m 45s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 33m 31s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 36m 01s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LineOfSightSuite - 2017.03.11 at 15h 37m 41s.xml">
+      <configuration name="LineOfSightSuite" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ParallelParenthesesBalancingSuite - 2017.03.11 at 12h 20m 30s.xml">
       <configuration name="ParallelParenthesesBalancingSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 09h 28m 49s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 09h 30m 25s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 09h 31m 56s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 09h 41m 02s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 09h 41m 39s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.10 at 10h 04m 05s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="UtilTest - 2017.03.11 at 11h 06m 13s.xml">
-      <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="UtilTest - 2017.03.11 at 12h 33m 15s.xml">
       <configuration name="UtilTest" configurationId="ScalaTestRunConfiguration" />
@@ -949,16 +951,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49943757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24184477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5174353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37570304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43869516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43869516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733408" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -979,11 +981,12 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="WIP." />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP." />
+    <MESSAGE value="Working version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -992,14 +995,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/util/Util.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/UtilTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1394,10 +1389,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/reductions/LineOfSightSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
           <folding />
         </state>
       </provider>
