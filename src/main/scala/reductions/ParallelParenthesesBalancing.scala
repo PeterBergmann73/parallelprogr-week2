@@ -10,9 +10,10 @@ object ParallelParenthesesBalancingRunner {
 
   @volatile var parResult = false
 
+  // changed values because it took too long
   val standardConfig = config(
-    Key.exec.minWarmupRuns -> 40,
-    Key.exec.maxWarmupRuns -> 80,
+    Key.exec.minWarmupRuns -> 10, // was 40
+    Key.exec.maxWarmupRuns -> 20, // was 80
     Key.exec.benchRuns -> 120,
     Key.verbose -> true
   ) withWarmer (new Warmer.Default)
@@ -36,82 +37,51 @@ object ParallelParenthesesBalancingRunner {
   }
 }
 
+
 object ParallelParenthesesBalancing {
+
+
+  // first int - number of unbalanced left parenthesis
+  // second int - number of unbalanced right parenthesis
+  @scala.annotation.tailrec
+  def traverse(chars: Array[Char], idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
+    //println(s"Entering threshold, idx $idx, until $until")
+    if (idx >= until) {
+      (arg1, arg2)
+    } else {
+      val (a1, a2) = chars(idx) match {
+        case '(' => (arg1 + 1, arg2)
+        case ')' =>
+          if (arg1 > 0) {
+            (arg1 - 1, arg2)
+          } else {
+            (arg1, arg2 + 1)
+          }
+        case _ => (arg1, arg2)
+      }
+
+      traverse(chars: Array[Char], idx = idx + 1, until = until, arg1 = a1, arg2 = a2)
+    }
+  }
+
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
     */
   def balance(chars: Array[Char]): Boolean = {
-
-    val length = chars.length
-
-    @scala.annotation.tailrec
-    def check(from: Int, cum: Int): Boolean = {
-      if (cum < 0) {
-        false
-      } else if (from >= length) {
-        cum == 0
-      } else {
-        val h = chars(from)
-
-        val current = h match {
-          case '(' => 1
-          case ')' => -1
-          case _ => 0
-        }
-
-        check(from + 1, cum + current)
-      }
-    }
-
-    if (length == 0) {
-      true
-    } else {
-      check(0, 0)
-    }
+    traverse(chars, 0, chars.length, 0, 0) == (0, 0)
   }
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
     */
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
-    println(s"chars: ${chars.toList}")
     require(threshold >= 1, s"illegal threshold $threshold")
 
-    // first int - number of unbalanced left parenthesis
-    // second int - number of unbalanced right parenthesis
-    @scala.annotation.tailrec
-    def traverse(idx: Int, until: Int, arg1: Int, arg2: Int): (Int, Int) = {
-      //println(s"Entering threshold, idx $idx, until $until")
-      if (idx >= until) {
-        (arg1, arg2)
-      } else {
-        val (a1, a2) = chars(idx) match {
-          case '(' => (arg1 + 1, arg2)
-          case ')' =>
-            if (arg1 > 0) {
-              (arg1 - 1, arg2)
-            } else {
-              (arg1, arg2 + 1)
-            }
-          case _ => (arg1, arg2)
-        }
-
-        traverse(idx = idx + 1, until = until, arg1 = a1, arg2 = a2)
-      }
-    }
-
     def reduce(from: Int, until: Int): (Int, Int) = {
-//      synchronized {
-//        println(s"Entering reduce, from: $from, until: $until")
-//        require(from <= until, s"from $from is not before until $until")
-//      }
 
       if ((until - from) <= threshold) {
-        traverse(idx = from, until = until, 0, 0)
+        traverse(chars, idx = from, until = until, 0, 0)
       } else {
-        //println(s"calculating mid, from $from, until $until")
-        val mid = (until - from) / 2
-
-        //println(s"mid $mid")
+        val mid = (until + from) / 2
 
         val (l, r) = parallel(reduce(from = from, until = mid), reduce(from = mid, until = until))
 

@@ -47,13 +47,14 @@ object ParallelCountChange {
     * coins for the specified amount of money.
     */
   def countChange(money: Int, coins: List[Int]): Int = {
-    // it is better to filter the coins.
-    // however, this will distort the benchmarking
-    // as there are thresholds that take into account
-    // the initial number of coins.
-    // val coins0: List[Int] = coins.filter(_ <= money).sorted
-    val coins0: List[Int] = coins.sorted
-    Util.countChange(money, coins0, 0)
+    // it is very tempting to sort coins
+    // and then run until coins.head is bigger than money,
+    // however, this will distort the threshold method
+    // used for parallel computations
+    if (money < 0) 0
+    else if (money == 0) 1
+    else if (coins.isEmpty) 0
+    else countChange(money - coins.head, coins) + countChange(money, coins.tail)
   }
 
   type Threshold = (Int, List[Int]) => Boolean
@@ -62,43 +63,14 @@ object ParallelCountChange {
     * specified list of coins for the specified amount of money.
     */
   def parCountChange(money: Int, coins: List[Int], threshold: Threshold): Int = {
-    // it is better to filter the coins.
-    // however, this will distort the benchmarking
-    // as there are thresholds that take into account
-    // the initial number of coins.
-    // val coins0: List[Int] = coins.filter(_ <= money).sorted
-    val coins0 = coins.sorted
 
-    def go(left: Int, c0: List[Int], count: Int): Int = {
+    if (threshold(money, coins) || money <= 0 || coins.isEmpty) countChange(money, coins)
+    else {
+      val (left, right) = parallel(parCountChange(money - coins.head, coins, threshold),
+          parCountChange(money, coins.tail, threshold))
 
-      if (threshold(left, c0)) {
-        Util.countChange(left, c0, count)
-      } else {
-        if (left == 0) {
-          count + 1
-        } else if (left < 0) {
-          count
-        } else {
-          c0 match {
-            case Nil => count
-            case h :: t =>
-              if (h > left) {
-                count
-              } else if (h == left) {
-                // this case will be handled below when subtracting the head,
-                // however, let us handled it separately
-                // just to reduce the number of recursive calls
-                count + 1
-              } else {
-                val (r1, r2) = parallel(go(left, t, count), go(left - h, c0, count))
-                r1 + r2
-              }
-          }
-        }
-      }
+      left + right
     }
-
-    Util.countChange(money, coins0, 0)
   }
 
   /** Threshold heuristic based on the starting money. */
