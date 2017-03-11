@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e13e1d36-35b9-4364-b91e-f5abb197fcad" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$balance$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/util/Util$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/util/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1$$anonfun$3.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Leaf$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Leaf$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Leaf.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Leaf.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Node$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Node$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Node.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Tree.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/LineOfSight$Tree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$combinedThreshold$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$moneyThreshold$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$$anonfun$totalCoinsThreshold$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelCountChange$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/reductions/ParallelParenthesesBalancingRunner$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/reductions/UtilTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" afterPath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" afterPath="$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/test/incCompileSetup/$global/streams/inc_compile_2.11" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -43,7 +68,7 @@
       <file leaf-file-name="LineOfSight.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="240">
               <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
               <folding />
             </state>
@@ -902,7 +927,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489242137333</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed the bugs in LineOfSight.">
+      <created>1489243103701</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489243103701</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -982,7 +1014,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="WIP." />
     <MESSAGE value="Working version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working version." />
+    <MESSAGE value="Fixed the bugs in LineOfSight." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bugs in LineOfSight." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1399,7 +1432,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reductions/LineOfSight.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="240">
           <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
           <folding />
         </state>

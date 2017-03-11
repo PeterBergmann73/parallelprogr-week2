@@ -109,7 +109,7 @@ object LineOfSight {
       }
     }
 
-    if (input.length != 0) {
+    if (input.length != 0 && from < until) {
       go(1, input.length, startingAngle)
     }
   }
